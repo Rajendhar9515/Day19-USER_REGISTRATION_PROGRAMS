@@ -28,6 +28,12 @@ public class UserRegistrationProblem {
 		boolean b2 = Pattern.matches("^(.+)@(\\S+)$", email);
 		System.out.println(b2);
 
+		// UC-4:- As a User need to follow predefined Mobile Format.
+		System.out.println("Enter Mobile Number");
+		String num = input.nextLine();
+		boolean b3 = Pattern.matches("^[0-9]{2}[0-9]{10}", num);
+		System.out.println(b3);
+
 	}
 
 }
