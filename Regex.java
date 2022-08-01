@@ -3,7 +3,7 @@ package com.bridgelabz.regex;
 import java.util.Scanner;
 import java.util.regex.Pattern;
 
-public class Regex {
+public class UserRegistrationProblem {
 	public static void main(String[] args) {
 		
 		System.out.println("\t WELCOME TO USER REGISTRATION PROBLEM \n");
