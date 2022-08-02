@@ -1,5 +1,6 @@
 package com.bridgelabz.regex;
 
+import java.util.regex.Pattern;
 import java.util.Scanner;
 
 public class UserRegistrationProblem {
