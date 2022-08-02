@@ -18,16 +18,16 @@ public class UserRegistrationProblem {
 	public static void lastNameValidation() {
 		System.out.println("Enter last Name");
 		String lastName = input.nextLine();
-		boolean b1 = Pattern.matches("^[A-Z]{1}[a-z]{2,}$", lastName);
-		System.out.println(b1);
+		boolean b = Pattern.matches("^[A-Z]{1}[a-z]{2,}$", lastName);
+		System.out.println(b);
 	}
 
 	// UC-3:- As a User need to enter a valid email.
 	public static void emailValidation() {
 		System.out.println("Enter Email");
 		String email = input.nextLine();
-		boolean b2 = Pattern.matches("^(.+)@(\\S+)$", email);
-		System.out.println(b2);
+		boolean b = Pattern.matches("^(.+)@(\\S+)$", email);
+		System.out.println(b);
 	}
 
 	public static void main(String[] args) {
