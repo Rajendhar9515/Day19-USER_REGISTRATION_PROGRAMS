@@ -39,11 +39,11 @@ public class UserRegistrationProblem {
 		System.out.println(b);
 	}
 
-	// UC-5:- As a User need to follow predefined Password rules. RULE-1:- minimum 8Characters.
+	// UC-8:- As a User need to follow predefined Password rules. Rule-4:- Has exactly 1 Special Character.
 	public static void passwordValidation() {
 		System.out.println("Enter Password");
 		String password = input.nextLine();
-		boolean b = Pattern.matches("^[A-Za-z0-9]{8,}$", password);
+		boolean b = Pattern.matches("^(?=.*[A-Z])(?=.*[0-9])(?=[\\w]*[\\W][\\w]*$)(?=.*[a-z]).{8,}$", password);
 		System.out.println(b);
 	}
 
