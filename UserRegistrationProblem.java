@@ -37,7 +37,20 @@ public class UserRegistrationProblem {
 		boolean b = Pattern.matches("^[0-9]{2}[0-9]{10}", num);
 		System.out.println(b);
 	}
-
+        // UC-8:- As a User need to follow predefined Password rules. Rule-4:- Has exactly 1 Special Character.
+	public static void passwordValidation() {
+		System.out.println("Enter Password");
+		String password = input.nextLine();
+		boolean b = Pattern.matches("^(?=.*[A-Z])(?=.*[0-9])(?=[\\w]*[\\W][\\w]*$)(?=.*[a-z]).{8,}$", password);
+		System.out.println(b);
+	}
+	// UC-9:- Should clear all email samples provided separately
+	public static void allEmailSampleValidation() {
+		System.out.println("Enter Your All Email Samples");
+		String email = input.nextLine();
+		boolean b = Pattern.matches("^[a-zA-Z0-9.+_-]+[@][a-zA-Z0-9]+[.]co(m|.in)$", email);
+		System.out.println(b);
+	}
 	public static void main(String[] args) {
 
 		System.out.println("\t WELCOME TO USER REGISTRATION PROBLEM \n");
@@ -46,6 +59,8 @@ public class UserRegistrationProblem {
 		lastNameValidation();
 		emailValidation();
 		mobileNumberValidation();
+		passwordValidation();
+		allEmailSampleValidation();
 
 	}
 }
